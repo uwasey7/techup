@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+body{
+
+   background:url(../img/back-image.png) ;
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+#form-task{
+  width: 90%;          
+    min-height: 70%;
+    margin-left: 10%;
+    background: url(../img/form-back.png);
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: row;
+   padding: 6rem;
+    align-items: center;
+    justify-content: space-around;
+    background-size:cover;
+    
+}
+.comment{
+    margin-right: 0%;
+}
+.title-form h1{
+    font-size: 3rem;
+    padding-bottom: 2rem;
+}
+#form-task .left-side .right-side{
+    flex-basis: 50vh;
+   
+}
+input[type="text"], input[type="email"], textarea, input[type="file"]{
+    border-bottom: 1px solid grey;
+    
+ 
+}
+textarea{
+    padding: 10px;
+    width: 100%;
+}
+.box{
+
+    padding: 1rem;
+  
+}
+.left-side{
+    margin: auto;
+    border-right: 1px solid rgb(240, 238, 238);
+   
+}
+
+input[type="submit"] {
+width: 7rem;
+min-height: 30px;
+background-color: orangered;
+border-radius: 2px;
+color: #fff;
+cursor: pointer;
+}
+.form-input{
+
+    display: flex;
+   
+}
+.input-box{
+    flex-basis: 30vh;
+}
+.right-side{
+    padding-top: 7rem;
+    padding-left: 3rem;
+    
+}
+input[type="file"]{
+    padding-top: 3rem;
+}
+
+.tittle-right{
+    margin: 1rem;
+}
+.file-button{
+    display: flex;
+}
+.file-button img{
+    height: 30px;
+
+}
+@media (max-width: 500px) {
+     .title-form h1{
+                  font-size: 1rem;
+    }
+
+    .left-side{
+                 margin: none;  
+                 font-size: 10px;
+    }
+    #form-task{
+                   width: 90%;
+                   min-height: 100%;
+                   flex-direction: column;
+                   padding: 6rem 0;
+    }
+    .left-side{
+                   font-size: 13px;
+    
+    }
+
+}
